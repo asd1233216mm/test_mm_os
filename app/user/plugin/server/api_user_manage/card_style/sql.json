@@ -1,0 +1,17 @@
+{
+    "name": "user_card_style2",
+    "title": "名片风格",
+    "table": "user_card_style",
+    "key": "style_id",
+    "orderby_default": "`style_id` desc",
+    "field_obj": "`style_id`,`name`,`color`",
+    "field_default": "`style_id`,`name`,`color`",
+    "query": {
+        "name": "`name` like '%{0}%'",
+        "color": "`color` like '%{0}%'",
+        "keyword": "(`name` like '%{0}%')"
+    },
+    "update": {},
+    "format": [],
+    "field_hide": []
+}

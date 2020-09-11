@@ -1,0 +1,138 @@
+{
+    "name": "user_liaison2",
+    "title": "联系人列表",
+    "add": {
+        "body": [
+            "user_id",
+            "owner_id",
+            "card_id",
+            "portrait"
+        ],
+        "body_required": [
+            "name",
+            "job"
+        ]
+    },
+    "del": {
+        "query": [],
+        "query_required": [
+            "liaison_id"
+        ]
+    },
+    "set": {
+        "query": [
+            "liaison_id",
+            "name",
+            "keyword"
+        ],
+        "query_required": [],
+        "body": [
+            "user_id",
+            "owner_id",
+            "card_id",
+            "name",
+            "job",
+            "portrait"
+        ],
+        "body_required": [],
+        "body_not": []
+    },
+    "get": {
+        "query": [
+            "liaison_id",
+            "name",
+            "keyword"
+        ],
+        "query_required": []
+    },
+    "list": [
+        {
+            "name": "liaison_id",
+            "title": "联系人编号",
+            "description": "",
+            "type": "number",
+            "dataType": "int",
+            "number": {
+                "range": [
+                    1,
+                    2147483647
+                ]
+            }
+        },
+        {
+            "name": "user_id",
+            "title": "用户编号",
+            "description": "(user_account.nickname)",
+            "type": "number",
+            "dataType": "int",
+            "number": {
+                "range": [
+                    1,
+                    2147483647
+                ]
+            }
+        },
+        {
+            "name": "owner_id",
+            "title": "名片用户",
+            "description": "(user_account.nickname)",
+            "type": "number",
+            "dataType": "int",
+            "number": {
+                "range": [
+                    1,
+                    2147483647
+                ]
+            }
+        },
+        {
+            "name": "card_id",
+            "title": "名片编号",
+            "description": "(user_card)",
+            "type": "number",
+            "dataType": "int",
+            "number": {
+                "range": [
+                    1,
+                    2147483647
+                ]
+            }
+        },
+        {
+            "name": "name",
+            "title": "姓名",
+            "description": "",
+            "type": "string",
+            "dataType": "varchar",
+            "string": {
+                "notEmpty": 1
+            }
+        },
+        {
+            "name": "job",
+            "title": "职位",
+            "description": "",
+            "type": "string",
+            "dataType": "varchar",
+            "string": {
+                "notEmpty": 1
+            }
+        },
+        {
+            "name": "portrait",
+            "title": "头像",
+            "description": "",
+            "type": "string",
+            "dataType": "text",
+            "string": {}
+        },
+        {
+            "name": "keyword",
+            "title": "关键词",
+            "description": "用于搜索姓名(name)",
+            "type": "string",
+            "dataType": "varchar",
+            "string": {}
+        }
+    ]
+}

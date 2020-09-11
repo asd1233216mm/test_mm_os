@@ -1,0 +1,100 @@
+{
+    "name": "home_pc",
+    "sort": 1,
+    "routes": [
+        {
+            "name": "user",
+            "path": "/user",
+            "redirect": "/user/sign_in"
+        },
+        {
+            "name": "user_sign_in",
+            "path": "/user/sign_in",
+            "component": "/user/home_pc/src/pages/sign_in.vue",
+            "level": 2,
+            "oauth": {
+                "signIn": false
+            }
+        },
+        {
+            "name": "user_sign_in_view",
+            "path": "/user/sign_in_view",
+            "component": "/user/home_pc/src/pages/sign_in_view.vue",
+            "level": 3,
+            "oauth": {
+                "signIn": false
+            }
+        },
+        {
+            "name": "user_sign_up",
+            "path": "/user/sign_up",
+            "component": "/user/home_pc/src/pages/sign_up.vue",
+            "level": 2,
+            "oauth": {
+                "signIn": false
+            }
+        },
+        {
+            "name": "user_sign_up_view",
+            "path": "/user/sign_up_view",
+            "component": "/user/home_pc/src/pages/sign_up_view.vue",
+            "level": 3,
+            "oauth": {
+                "signIn": false
+            }
+        },
+		{
+		    "name": "liaison",
+		    "path": "/user/liaison",
+		    "component": "/user/home_pc/src/pages/liaison.vue",
+		    "level": 3,
+		    "oauth": {
+		        "signIn": true
+		    }
+		},
+		{
+		    "name": "card",
+		    "path": "/user/card",
+		    "component": "/user/home_pc/src/pages/card.vue",
+		    "level": 3,
+		    "oauth": {
+		        "signIn": true
+		    }
+		}
+    ],
+    "top": [],
+    "left": [],
+    "bottom": [],
+    "right": [],
+    "desktop": [],
+    "quick": [],
+    "main": [
+        {
+            "title": "用户",
+            "name": "user",
+            "icon": "<i class=\"fa-cog\"></i>",
+            "url": "/user",
+            "display": 0,
+            "sub": [
+                {
+                    "title": "账户登录",
+                    "show": false,
+                    "name": "user_sign_in",
+                    "url": "/user/sign_in"
+                },
+                {
+                    "title": "账户注册",
+                    "show": false,
+                    "name": "user_sign_up",
+                    "url": "/user/sign_up"
+                },
+				{
+				    "title": "联系人列表",
+				    "show": false,
+				    "name": "liaison",
+				    "url": "/user/liaison"
+				}
+            ]
+        }
+    ]
+}

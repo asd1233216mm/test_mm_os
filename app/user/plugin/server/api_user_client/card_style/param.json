@@ -1,0 +1,82 @@
+{
+    "name": "user_card_style",
+    "title": "名片风格",
+    "add": {
+        "body": [],
+        "body_required": [
+            "name",
+            "color"
+        ]
+    },
+    "del": {
+        "query": [],
+        "query_required": [
+            "style_id"
+        ]
+    },
+    "set": {
+        "query": [
+            "style_id",
+            "name",
+            "keyword"
+        ],
+        "query_required": [],
+        "body": [
+            "name",
+            "color"
+        ],
+        "body_required": [],
+        "body_not": []
+    },
+    "get": {
+        "query": [
+            "style_id",
+            "name",
+            "keyword"
+        ],
+        "query_required": []
+    },
+    "list": [
+        {
+            "name": "style_id",
+            "title": "风格编号",
+            "description": "",
+            "type": "number",
+            "dataType": "int",
+            "number": {
+                "range": [
+                    1,
+                    2147483647
+                ]
+            }
+        },
+        {
+            "name": "name",
+            "title": "风格名称",
+            "description": "",
+            "type": "string",
+            "dataType": "varchar",
+            "string": {
+                "notEmpty": 1
+            }
+        },
+        {
+            "name": "color",
+            "title": "风格颜色",
+            "description": "用，号分隔",
+            "type": "string",
+            "dataType": "varchar",
+            "string": {
+                "notEmpty": 1
+            }
+        },
+        {
+            "name": "keyword",
+            "title": "关键词",
+            "description": "用于搜索风格名称(name)",
+            "type": "string",
+            "dataType": "varchar",
+            "string": {}
+        }
+    ]
+}

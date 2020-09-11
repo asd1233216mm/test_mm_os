@@ -1,0 +1,291 @@
+{
+    "name": "user_card2",
+    "title": "用户名片",
+    "add": {
+        "body": [
+            "portrait",
+            "company",
+            "logo",
+            "address",
+            "url",
+            "work_extent",
+            "business_scope",
+            "mail",
+            "qq",
+            "wechat",
+            "user_id",
+            "style_id",
+            "color",
+            "invite_code",
+            "referrer_id",
+            "show_innfo",
+            "show_ranking"
+        ],
+        "body_required": [
+            "name",
+            "job",
+            "phone"
+        ]
+    },
+    "del": {
+        "query": [],
+        "query_required": [
+            "card_id"
+        ]
+    },
+    "set": {
+        "query": [
+            "card_id",
+            "name",
+            "show_innfo",
+            "show_ranking",
+            "keyword"
+        ],
+        "query_required": [],
+        "body": [
+            "portrait",
+            "name",
+            "job",
+            "company",
+            "logo",
+            "address",
+            "url",
+            "work_extent",
+            "business_scope",
+            "phone",
+            "mail",
+            "qq",
+            "wechat",
+            "user_id",
+            "style_id",
+            "color",
+            "invite_code",
+            "referrer_id",
+            "show_innfo",
+            "show_ranking"
+        ],
+        "body_required": [],
+        "body_not": []
+    },
+    "get": {
+        "query": [
+            "card_id",
+            "name",
+            "show_innfo",
+            "show_ranking",
+            "keyword"
+        ],
+        "query_required": []
+    },
+    "list": [
+        {
+            "name": "card_id",
+            "title": "名片编号",
+            "description": "",
+            "type": "number",
+            "dataType": "int",
+            "number": {
+                "range": [
+                    1,
+                    2147483647
+                ]
+            }
+        },
+        {
+            "name": "portrait",
+            "title": "头像",
+            "description": "",
+            "type": "string",
+            "dataType": "text",
+            "string": {}
+        },
+        {
+            "name": "name",
+            "title": "姓名",
+            "description": "这里填写姓名",
+            "type": "string",
+            "dataType": "varchar",
+            "string": {
+                "notEmpty": 1
+            }
+        },
+        {
+            "name": "job",
+            "title": "职位",
+            "description": "担任什么职位",
+            "type": "string",
+            "dataType": "varchar",
+            "string": {
+                "notEmpty": 1
+            }
+        },
+        {
+            "name": "company",
+            "title": "公司",
+            "description": "公司的名称或主要工作名",
+            "type": "string",
+            "dataType": "varchar",
+            "string": {}
+        },
+        {
+            "name": "logo",
+            "title": "图标",
+            "description": "个人LOGO或公司LOGO",
+            "type": "string",
+            "dataType": "text",
+            "string": {}
+        },
+        {
+            "name": "address",
+            "title": "地址",
+            "description": "本人的所在地址或公司所在地址",
+            "type": "string",
+            "dataType": "varchar",
+            "string": {}
+        },
+        {
+            "name": "url",
+            "title": "网址",
+            "description": "用于个人网站或公司网站的链接地址",
+            "type": "string",
+            "dataType": "varchar",
+            "string": {
+                "format": "url"
+            }
+        },
+        {
+            "name": "work_extent",
+            "title": "职务",
+            "description": "做什么事情或工作的范围",
+            "type": "string",
+            "dataType": "text",
+            "string": {}
+        },
+        {
+            "name": "business_scope",
+            "title": "经营范围",
+            "description": "",
+            "type": "string",
+            "dataType": "text",
+            "string": {}
+        },
+        {
+            "name": "phone",
+            "title": "电话",
+            "description": "",
+            "type": "string",
+            "dataType": "varchar",
+            "string": {
+                "format": "phone",
+                "notEmpty": 1
+            }
+        },
+        {
+            "name": "mail",
+            "title": "邮箱",
+            "description": "",
+            "type": "string",
+            "dataType": "varchar",
+            "string": {}
+        },
+        {
+            "name": "qq",
+            "title": "QQ",
+            "description": "",
+            "type": "string",
+            "dataType": "varchar",
+            "string": {}
+        },
+        {
+            "name": "wechat",
+            "title": "微信",
+            "description": "",
+            "type": "string",
+            "dataType": "varchar",
+            "string": {}
+        },
+        {
+            "name": "user_id",
+            "title": "用户编号",
+            "description": "(user_account.nickname)",
+            "type": "number",
+            "dataType": "int",
+            "number": {
+                "range": [
+                    1,
+                    2147483647
+                ]
+            }
+        },
+        {
+            "name": "style_id",
+            "title": "名片风格",
+            "description": "(user_card_style)",
+            "type": "number",
+            "dataType": "int",
+            "number": {
+                "range": [
+                    1,
+                    2147483647
+                ]
+            }
+        },
+        {
+            "name": "color",
+            "title": "风格颜色",
+            "description": "风格中的颜色",
+            "type": "string",
+            "dataType": "varchar",
+            "string": {}
+        },
+        {
+            "name": "invite_code",
+            "title": "邀请码",
+            "description": "用于邀请他人的邀请码",
+            "type": "string",
+            "dataType": "varchar",
+            "string": {}
+        },
+        {
+            "name": "referrer_id",
+            "title": "推荐人编号",
+            "description": "(user_account.nickname)",
+            "type": "number",
+            "dataType": "int",
+            "number": {
+                "range": [
+                    1,
+                    2147483647
+                ]
+            }
+        },
+        {
+            "name": "show_innfo",
+            "title": "显示状态",
+            "description": "0为不显示，1为显示",
+            "type": "number",
+            "dataType": "tinyint",
+            "number": {
+                "max": 1
+            }
+        },
+        {
+            "name": "show_ranking",
+            "title": "显示排名",
+            "description": "0为不排名，1为排名",
+            "type": "number",
+            "dataType": "tinyint",
+            "number": {
+                "max": 1
+            }
+        },
+        {
+            "name": "keyword",
+            "title": "关键词",
+            "description": "用于搜索姓名(name)",
+            "type": "string",
+            "dataType": "varchar",
+            "string": {}
+        }
+    ]
+}

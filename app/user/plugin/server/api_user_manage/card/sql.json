@@ -1,0 +1,49 @@
+{
+    "name": "user_card2",
+    "title": "用户名片",
+    "table": "user_card",
+    "key": "card_id",
+    "orderby_default": "`card_id` desc",
+    "field_obj": "`card_id`,`portrait`,`name`,`job`,`company`,`logo`,`address`,`url`,`work_extent`,`business_scope`,`phone`,`mail`,`qq`,`wechat`,`user_id`,`style_id`,`color`,`invite_code`,`referrer_id`,`show_innfo`,`show_ranking`",
+    "field_default": "`card_id`,`name`,`job`,`company`,`address`,`url`,`phone`,`mail`,`qq`,`wechat`,`user_id`,`style_id`,`color`,`invite_code`,`referrer_id`,`show_innfo`,`show_ranking`",
+    "query": {
+        "portrait": "`portrait` like '%{0}%'",
+        "name": "`name` like '%{0}%'",
+        "job": "`job` like '%{0}%'",
+        "company": "`company` like '%{0}%'",
+        "logo": "`logo` like '%{0}%'",
+        "address": "`address` like '%{0}%'",
+        "url": "`url` like '%{0}%'",
+        "work_extent": "`work_extent` like '%{0}%'",
+        "business_scope": "`business_scope` like '%{0}%'",
+        "phone": "`phone` like '%{0}%'",
+        "mail": "`mail` like '%{0}%'",
+        "qq": "`qq` like '%{0}%'",
+        "wechat": "`wechat` like '%{0}%'",
+        "color": "`color` like '%{0}%'",
+        "invite_code": "`invite_code` like '%{0}%'",
+        "keyword": "(`name` like '%{0}%')"
+    },
+    "update": {},
+    "format": [
+        {
+            "key": "user_id",
+            "title": "用户编号",
+            "table": "user_account",
+            "name": "nickname"
+        },
+        {
+            "key": "style_id",
+            "title": "名片风格",
+            "table": "user_card_style",
+            "name": "name"
+        },
+        {
+            "key": "referrer_id",
+            "title": "推荐人编号",
+            "table": "user_account",
+            "name": "nickname"
+        }
+    ],
+    "field_hide": []
+}

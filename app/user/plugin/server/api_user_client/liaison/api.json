@@ -1,0 +1,12 @@
+{
+    "name": "user_liaison",
+    "title": "联系人列表",
+    "description": "",
+    "path": "/api/user/liaison",
+    "method": "GET",
+    "cache": 0,
+    "client_cache": false,
+    "param_path": "./param.json",
+    "sql_path": "./sql.json",
+    "check_param": true
+}

@@ -1,0 +1,50 @@
+{
+    "name": "user_liaison",
+    "title": "联系人列表",
+    "table": "user_liaison",
+    "key": "liaison_id",
+    "orderby_default": "`liaison_id` desc",
+    "field_obj": "`liaison_id`,`user_id`,`owner_id`,`card_id`,`name`,`job`,`portrait`",
+    "field_default": "`liaison_id`,`user_id`,`owner_id`,`card_id`,`name`,`job`",
+    "method": "get get_obj",
+    "query": {
+        "name": "`name` like '%{0}%'",
+        "job": "`job` like '%{0}%'",
+        "portrait": "`portrait` like '%{0}%'",
+        "keyword": "(`name` like '%{0}%')"
+    },
+    "query_default": {
+        "user_id": "`user_id` = {user_id}"
+    },
+    "update": {},
+    "format": [
+        {
+            "key": "user_id",
+            "title": "用户编号",
+            "table": "user_account",
+            "name": "nickname"
+        },
+        {
+            "key": "owner_id",
+            "title": "名片用户",
+            "table": "user_account",
+            "name": "nickname"
+        },
+        {
+            "key": "card_id",
+            "title": "名片编号",
+            "table": "user_card",
+            "name": "name"
+        }
+    ],
+    "filter": {
+        "table": "table",
+        "page": "page",
+        "size": "size",
+        "method": "method",
+        "orderby": "orderby",
+        "field": "field",
+        "count_ret": "count_ret",
+        "user_id": "user_id"
+    }
+}

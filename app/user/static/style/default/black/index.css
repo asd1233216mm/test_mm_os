@@ -1,0 +1,18 @@
+.card {background: #333333; color:#DEDEDE;}
+.card .portrait {}
+.card .logo {}
+
+.card .name {float: left; width: 50%;}
+.card .work_extent {float: left; width: 50%;}
+
+.card .phone {float: left; width: 50%;}
+.card .qq {float: left; width: 50%;}
+
+.card .address {float: left; width: 50%;}
+.card .url {float: left; width: 50%;}
+
+.card .wechat {float: left; width: 50%;}
+.card .mail {float: left; width: 50%;}
+
+.card .company {}
+.card .business_scope {}
